@@ -3,7 +3,7 @@ const factorial = (n) => {
   for (let i = 1; i <= n; i++) {
     answer = answer * i;
   }
-  return answer
+  return answer;
 };
 
 console.log(factorial(5));

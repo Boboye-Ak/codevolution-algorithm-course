@@ -6,10 +6,11 @@ const binarySearch = (arr, t) => {
         if (arr[middleIndex] == t) {
             return middleIndex
         } else if (t > arr[middleIndex]) {
-            leftIndex = middleIndex+1
+            leftIndex = middleIndex + 1
         } else if (t < arr[middleIndex]) {
             rightIndex = middleIndex - 1
         }
+        
     }
     return -1
 }

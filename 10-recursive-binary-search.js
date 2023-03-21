@@ -4,10 +4,10 @@ const recursiveBinarySearch = (arr, t) => {
             let middleIndex = Math.floor((leftIndex + rightIndex) / 2)
             if (t == array[middleIndex]) {
                 return middleIndex
-            }else if(t<array[middleIndex]){
-                return search(leftIndex, rightIndex-1, array)
-            }else if(t>array[middleIndex]){
-                return search(middleIndex+1, rightIndex, array)
+            } else if (t < array[middleIndex]) {
+                return search(leftIndex, rightIndex - 1, array)
+            } else if (t > array[middleIndex]) {
+                return search(middleIndex + 1, rightIndex, array)
             }
         }
         return -1
